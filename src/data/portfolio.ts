@@ -12,7 +12,7 @@ export const profile = {
   firstName: 'ABISH',
   seriesTag: 'THE SERIES',
   /** Fictional studio card shown at the very start of the opening sequence. */
-  originalLabel: 'ABISH . M - PORTFOLIO',
+  originalLabel: 'ABISH - PORTFOLIO',
   role: 'MERN Stack Developer',
   tagline: ['MERN Stack Developer', 'Full-Stack Web Development', 'JavaScript'],
   intro:
