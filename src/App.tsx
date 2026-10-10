@@ -120,7 +120,7 @@ function Series() {
             <Hero key={`hero-${profileId}`} onPlay={() => setPlaying(true)} onResume={() => setResumeOpen(true)} profileId={profileId} />
             <ContinueWatching order={order} />
             {order.map((id) => (
-              <Scene key={id} id={id} className={id === 'originals' ? '!py-0 sm:!py-0' : ''}>
+              <Scene key={id} id={id} className={id === 'originals' ? '!py-0 sm:!py-0' : id === 'picks' ? '!pt-4 sm:!pt-8' : ''}>
                 {sections[id]}
               </Scene>
             ))}
