@@ -21,7 +21,7 @@ export default function FinalCTA({ onReplay }: { onReplay: () => void }) {
   ];
 
   return (
-    <section id="contact" ref={ref} className="relative flex min-h-[100svh] flex-col items-center justify-center overflow-hidden px-4 py-24 text-center">
+    <section id="contact" ref={ref} className="relative flex min-h-[100svh] flex-col items-center justify-center overflow-hidden px-4 py-24 text-center [overflow-wrap:anywhere]">
       <div aria-hidden className="absolute inset-0 bg-[radial-gradient(60%_50%_at_50%_60%,rgba(229,19,43,0.18),transparent_70%)]" />
       <Particles count={36} />
 
@@ -34,8 +34,8 @@ export default function FinalCTA({ onReplay }: { onReplay: () => void }) {
         The Next Episode
       </motion.p>
       <motion.h2
-        className="relative font-display leading-[0.85] text-bone"
-        style={{ fontSize: 'clamp(3.4rem, 13vw, 12rem)', letterSpacing: spacing, filter: blur, opacity }}
+        className="relative max-w-full font-display leading-[0.85] text-bone"
+        style={{ fontSize: 'clamp(3rem, 11vw, 12rem)', letterSpacing: spacing, filter: blur, opacity }}
       >
         TO BE CONTINUED…
       </motion.h2>
