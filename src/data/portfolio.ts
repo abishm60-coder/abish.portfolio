@@ -172,57 +172,15 @@ export type Achievement = {
   link?: string;
 };
 
-export const achievements: Achievement[] = [
-  {
-    id: 'flipkart-grid',
-    title: 'Semi-Finalist',
-    org: 'Flipkart GRiD 7.0',
-    detail: 'Competed among top national engineering talent.',
-    laurel: 'Semi-Finalist',
-    link: 'https://drive.google.com/file/d/16pXA2hssyJqlYMr27wfi6U4bjKDLvh9f/view?usp=drive_link',
-  },
-  {
-    id: 'branch-topper',
-    title: 'IT Branch Topper',
-    org: 'B.Tech IT',
-    detail: '9.24 SGPA for the semester.',
-    laurel: 'Branch Topper',
-  },
-  {
-    id: 'competitive-coding',
-    title: '850+ Problems Solved',
-    org: 'LeetCode • GFG • CodeChef',
-    detail: 'LeetCode: 350+ DSA problems (peak rating 1442). GFG: 300+ problems (rating 1436). CodeChef: 200+ problems.',
-    laurel: 'Competitive Coding',
-  },
-  {
-    id: 'hackerrank',
-    title: '5-Star Badges',
-    org: 'HackerRank',
-    detail: '5-star badges in C, Python, Java, and SQL.',
-    laurel: 'Four Languages',
-  },
-];
+export const achievements: Achievement[] = [];
 
 export type Certification = { issuer: string; name: string; link: string };
 
 export const certifications: Certification[] = [
-  { issuer: 'NPTEL', name: 'Database Management System', link: 'https://drive.google.com/file/d/1MqkJHchXeaGD4S8mzPmEGxEYddAsxAjN/view?usp=drive_link' },
-  { issuer: 'NPTEL', name: 'Fundamentals of Artificial Intelligence', link: 'https://drive.google.com/file/d/1GqyUQ-lrE-bHaN457t6fIdssgGG4HMXf/view?usp=drive_link' },
-  { issuer: 'NPTEL', name: 'Deep Learning', link: 'https://drive.google.com/file/d/1PWSRP5SQDPzkoTCF3A24eIJoSpTwgsff/view?usp=sharing' },
-  { issuer: 'AWS', name: 'AWS Certified AI Practitioner', link: 'https://drive.google.com/file/d/1h8e5p0a9T6f5gBaOP2ROfwWHZfkkspGn/view?usp=drive_link' },
-  { issuer: 'AWS', name: 'AWS Academy Graduate – Cloud Foundations', link: 'https://www.credly.com/badges/2d4810f9-3dbe-444d-99b9-61312ea5e7df/public_url' },
-  { issuer: 'MongoDB', name: 'MongoDB Certified Associate Developer', link: 'https://www.credly.com/badges/fd3362bd-743a-4c4d-a68e-b1fdc5d46811/public_url' },
-  { issuer: 'GitHub', name: 'GitHub Foundations', link: 'https://drive.google.com/file/d/1o0fkCAMRWTg1oMwxlqu6t6wnOpBv66Vq/view?usp=sharing' },
-  { issuer: 'Pearson', name: 'IT Specialist – HTML and CSS', link: 'https://www.credly.com/badges/e4a55298-e396-41d8-a032-283aafe9fab7/public_url' },
-  { issuer: 'Oracle', name: 'Java Certified Foundations Associate', link: 'https://drive.google.com/file/d/1g-yyceHtLg_k2RWiOIJqH0MMcGlaH90P/view?usp=sharing' },
-  { issuer: 'Oracle', name: 'Oracle Certified Foundations Associate – Database', link: 'https://drive.google.com/file/d/10-DzabbcH2vHrI6bAohoT8czKRZMa2kV/view?usp=drive_link' },
-  { issuer: 'Cisco', name: 'HTML Essentials', link: 'https://www.credly.com/badges/eb27ca95-3b2a-4948-bef9-0385d1d49055/public_url' },
-  { issuer: 'Cisco', name: 'CSS Essentials', link: 'https://www.credly.com/badges/3b37497f-6a61-4889-af3c-ed337a460a0b/public_url' },
-  { issuer: 'Cisco', name: 'JavaScript Essentials 1', link: 'https://www.credly.com/badges/9cdd4d55-6ecc-463f-b254-811ccdd0539c/public_url' },
-  { issuer: 'Cisco', name: 'JavaScript Essentials 2', link: 'https://www.credly.com/badges/0e1b036e-4318-4c8e-b750-2aca77314442/public_url' },
-  { issuer: 'Cisco', name: 'Python Essentials 1', link: 'https://www.credly.com/badges/0e21e3eb-d8ef-4770-95d7-dcbd6f8696b1/public_url' },
-  { issuer: 'Udemy', name: 'Microsoft Azure Hands-On Training (AZ-900, AZ-104, AZ-305)', link: 'https://drive.google.com/file/d/1KrXClhY0nJ3Acxs7DioNf4Q1rpaMvgPT/view?usp=sharing' },
+  { issuer: 'Simplilearn', name: 'ChatGPT Advanced Course', link: '/assets/certificates/simplilearn-chatgpt.jpg' },
+  { issuer: 'MongoDB', name: 'MongoDB Basics for Students', link: '/assets/certificates/mongodb-basics.jpg' },
+  { issuer: 'AWS Academy', name: 'AWS Academy Graduate – Cloud Architecting', link: 'https://www.credly.com/go/1kH8hORa' },
+  { issuer: 'ICT Academy', name: 'Cloud Solutions Architect – Associate (AWS)', link: '/assets/certificates/ict-academy-aws-architect.png' },
 ];
 
 export type Skill = { name: string; mono: string; note?: string };
@@ -318,11 +276,9 @@ export const skillEvidence: Record<string, string[]> = {
   Vercel: ['The Jesus Store', 'Shift Pattern Studio', 'Gymbold'],
   Render: ['Backend Deployment'],
   PostgreSQL: ['Database Knowledge'],
-  MongoDB: ['MongoDB Certified Associate Developer'],
-  DBMS: ['NPTEL Database Management System', 'Oracle Database Foundations'],
-  DSA: ['Tech Fellow', '850+ problems solved'],
-  'Cloud Computing (AWS)': ['AWS Certified AI Practitioner', 'AWS Academy Cloud Foundations'],
-  'Machine Learning': ['B.Tech IT', 'NPTEL Deep Learning'],
+  MongoDB: ['MongoDB Basics for Students'],
+  'Cloud Computing (AWS)': ['AWS Academy Cloud Architecting', 'Cloud Solutions Architect – Associate (AWS)'],
+  'Machine Learning': ['B.Tech IT'],
 };
 
 export type Episode = {
@@ -437,7 +393,7 @@ export const topPicks: TopPick[] = [
   { label: 'Primary language', title: 'JavaScript', detail: 'Listed as primary on the resume', palette: amber },
   { label: 'Primary framework', title: 'React', detail: 'Frontend development', palette: crimson },
   { label: 'Internship', title: 'Internship', detail: 'MERN-Stack · Srishti Innovative', palette: ocean },
-  { label: 'Database credential', title: 'MongoDB', detail: 'Certified Associate Developer', palette: jade },
+  { label: 'Database credential', title: 'MongoDB', detail: 'Basics for Students', palette: jade },
   { label: 'Current focus', title: 'Software Development', detail: 'Frontend Developer', palette: violet },
 ];
 
@@ -468,14 +424,9 @@ export const introSlides: IntroSlide[] = [
     lines: ['The Jesus Store — E-Commerce Platform', 'Shift Pattern Studio — Agency Website', 'Gymbold — Fitness Landing Page'],
   },
   {
-    kicker: 'Achievements',
-    title: 'Top Moments',
-    lines: ['Tech Fellow', 'Semi-Finalist — Flipkart GRiD 7.0', 'IT Branch Topper — 9.24 SGPA'],
-  },
-  {
     kicker: 'Certified',
-    title: '16 Certifications',
-    lines: ['AWS · MongoDB · Oracle · GitHub · Pearson', 'NPTEL · Cisco · Udemy'],
+    title: '4 Credentials',
+    lines: ['AWS Academy · ICT Academy', 'MongoDB · Simplilearn'],
   },
   {
     kicker: 'Current mission',
@@ -504,7 +455,7 @@ export const viewerProfiles: {
   {
     id: 'recruiter',
     name: 'Recruiter',
-    blurb: 'Resume, achievements & skills first',
+    blurb: 'Resume, certifications & skills first',
     color: '#4cc9ff',
     order: ['story', 'moments', 'skills', 'originals', 'about', 'journey', 'picks'],
   },
@@ -530,6 +481,6 @@ export const sectionMeta: Record<SectionId, { nav: string; card: string; meta: s
   originals: { nav: 'Originals', card: 'My Projects', meta: `${projects.length} Originals • 2026`, palette: crimson },
   picks: { nav: 'Top Picks', card: 'Top Picks', meta: 'Top 5 from the resume', palette: jade },
   skills: { nav: 'Skills', card: 'My Skills', meta: `${skillCategories.length} Categories`, palette: ocean },
-  moments: { nav: 'Moments', card: 'My Achievements', meta: `${achievements.length} Moments • ${certifications.length} Certifications`, palette: crimson },
+  moments: { nav: 'Certs', card: 'Certifications', meta: `${certifications.length} Credentials`, palette: crimson },
   story: { nav: 'Resume', card: 'The Full Story', meta: 'Resume • View & download', palette: violet },
 };

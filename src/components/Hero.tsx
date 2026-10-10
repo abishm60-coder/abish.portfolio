@@ -1,6 +1,6 @@
 import { useRef } from 'react';
 import { motion, useMotionValue, useScroll, useSpring, useTransform } from 'framer-motion';
-import { achievements, certifications, education, profile, projects, type ProfileId } from '../data/portfolio';
+import { certifications, education, profile, projects, type ProfileId } from '../data/portfolio';
 import { useFinePointer } from '../hooks/useMedia';
 import { useSmoothScroll } from '../hooks/smoothScroll';
 import { EASE, Magnetic, Particles } from './fx';
@@ -45,7 +45,7 @@ export default function Hero({ onPlay, onResume, profileId }: { onPlay: () => vo
 
   const floating = [
     { text: education[0].score, sub: 'B.Tech IT', pos: 'left-[2%] top-[30%]', depth: 1 },
-    { text: `${achievements[0].title}`, sub: achievements[0].org, pos: 'right-[0%] top-[18%]', depth: -1 },
+    { text: 'AWS & Cloud Certified', sub: 'ICT Academy & AWS', pos: 'right-[0%] top-[18%]', depth: -1 },
     { text: 'JavaScript · React · Node.js', sub: 'Primary stack', pos: 'right-[4%] bottom-[24%]', depth: 0.6 },
   ];
 
