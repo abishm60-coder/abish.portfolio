@@ -2,14 +2,11 @@ import { useEffect } from 'react';
 import { motion } from 'framer-motion';
 import { profile } from '../data/portfolio';
 import { useScrollLock } from '../hooks/smoothScroll';
-import { useMedia } from '../hooks/useMedia';
 import { EASE } from './fx';
-import { ResumeSheet } from './ResumeViewer';
 
-/** Full-screen PDF viewer. On phones (where inline PDFs are unreliable) it offers open/download instead. */
+/** Full-screen PDF viewer with download and open options. */
 export default function ResumeModal({ onClose }: { onClose: () => void }) {
   useScrollLock(true);
-  const small = useMedia('(max-width: 767px)');
 
   useEffect(() => {
     const onKey = (e: KeyboardEvent) => e.key === 'Escape' && onClose();
@@ -44,16 +41,7 @@ export default function ResumeModal({ onClose }: { onClose: () => void }) {
         animate={{ opacity: 1, y: 0, scale: 1 }}
         transition={{ duration: 0.6, ease: EASE }}
       >
-        {small ? (
-          <div data-lenis-prevent className="h-full overflow-y-auto">
-            <ResumeSheet />
-            <a href={profile.resumePdf} target="_blank" rel="noreferrer" className="glass mt-4 flex min-h-12 items-center justify-center rounded-md text-sm font-semibold text-bone">
-              Open original PDF ↗
-            </a>
-          </div>
-        ) : (
-          <iframe title="Abish resume (PDF)" src={`${profile.resumePdf}#view=FitH`} className="h-full w-full rounded-xl bg-white" />
-        )}
+        <iframe title="Abish resume (PDF)" src={`${profile.resumePdf}#view=FitH`} className="h-full w-full rounded-xl bg-white shadow-2xl" />
       </motion.div>
     </motion.div>
   );

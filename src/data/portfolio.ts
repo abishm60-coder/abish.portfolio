@@ -18,7 +18,7 @@ export const profile = {
   intro:
     'B.Tech Information Technology graduate (CGPA 7.20) and MERN stack developer building responsive web applications with MongoDB, Express.js, React, and Node.js.',
   location: 'Villukuri, Kanniyakumari, Tamilnadu, India',
-  email: 'sushmitadasari17@gmail.com',
+  email: 'abishm60@gmail.com',
   links: {
     linkedin: 'https://www.linkedin.com/in/abish-m',
     github: 'https://github.com/abishm60-coder',
@@ -41,11 +41,11 @@ export const education = [
     score: 'CGPA 7.20',
   },
   {
-    school: 'Sri Chaitanya Junior College',
-    place: 'Kakinada',
-    degree: 'BIEAP — MPC',
-    period: 'June 2021 – May 2023',
-    score: 'Score 925/1000',
+    school: 'Adline Matric Higher Secondary School',
+    place: 'Villukuri',
+    degree: 'HSC & SSLC — Computer Science',
+    period: '2020 – 2022',
+    score: 'Score 86.6%',
   },
 ];
 
