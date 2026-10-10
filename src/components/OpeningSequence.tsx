@@ -9,12 +9,12 @@ import { EASE, Magnetic } from './fx';
  * black → studio card → ABISH → THE SERIES → portrait reveal → role → ▶ PLAY
  */
 const TIMELINE = [
-  { at: 300, beat: 1 }, // studio card
-  { at: 1900, beat: 2 }, // name
-  { at: 2700, beat: 3 }, // THE SERIES
-  { at: 3400, beat: 4 }, // portrait
-  { at: 4300, beat: 5 }, // role
-  { at: 5000, beat: 6 }, // play button
+  { at: 50, beat: 1 }, // studio card
+  { at: 1200, beat: 2 }, // name
+  { at: 2000, beat: 3 }, // THE SERIES
+  { at: 2700, beat: 4 }, // portrait
+  { at: 3500, beat: 5 }, // role
+  { at: 4200, beat: 6 }, // play button
 ];
 
 export default function OpeningSequence({ onDone }: { onDone: () => void }) {
