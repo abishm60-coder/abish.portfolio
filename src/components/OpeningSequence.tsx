@@ -43,10 +43,6 @@ export default function OpeningSequence({ onDone }: { onDone: () => void }) {
       role="dialog"
       aria-label="Opening titles"
     >
-      {/* letterbox bars */}
-      <motion.div className="absolute inset-x-0 top-0 z-30 h-[7vh] bg-black" initial={{ y: 0 }} animate={{ y: beat >= 6 ? '-100%' : 0 }} transition={{ duration: 1.2, ease: EASE }} />
-      <motion.div className="absolute inset-x-0 bottom-0 z-30 h-[7vh] bg-black" initial={{ y: 0 }} animate={{ y: beat >= 6 ? '100%' : 0 }} transition={{ duration: 1.2, ease: EASE }} />
-
       {/* projector flicker light */}
       <motion.div
         aria-hidden
@@ -95,7 +91,6 @@ export default function OpeningSequence({ onDone }: { onDone: () => void }) {
           className="h-full w-auto max-w-full object-contain object-bottom [mask-image:linear-gradient(to_bottom,black_55%,transparent_98%)]"
         />
       </motion.div>
-      <div aria-hidden className="absolute inset-0 z-[1] bg-[radial-gradient(70%_60%_at_50%_40%,transparent_30%,rgba(0,0,0,0.85)_100%)]" />
 
       {/* title */}
       <div className="absolute inset-0 z-10 flex flex-col items-center justify-center px-4 text-center">
