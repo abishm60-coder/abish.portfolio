@@ -179,7 +179,7 @@ export type Certification = { issuer: string; name: string; link: string };
 export const certifications: Certification[] = [
   { issuer: 'Simplilearn', name: 'ChatGPT Advanced Course', link: '/assets/certificates/simplilearn-chatgpt.jpg' },
   { issuer: 'MongoDB', name: 'MongoDB Basics for Students', link: '/assets/certificates/mongodb-basics.jpg' },
-  { issuer: 'AWS Academy', name: 'AWS Academy Graduate – Cloud Architecting', link: 'https://www.credly.com/go/1kH8hORa' },
+  { issuer: 'AWS Academy', name: 'AWS Academy Graduate – Cloud Architecting', link: '/assets/certificates/aws-academy-cloud-architecting.png' },
   { issuer: 'ICT Academy', name: 'Cloud Solutions Architect – Associate (AWS)', link: '/assets/certificates/ict-academy-aws-architect.png' },
 ];
 
