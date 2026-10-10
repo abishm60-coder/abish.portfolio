@@ -47,7 +47,7 @@ export default function About() {
 
         <div>
           <motion.p
-            className="font-serif text-[clamp(1.6rem,3.2vw,2.6rem)] italic leading-[1.15] text-bone"
+            className="font-serif text-[clamp(1.25rem,3.2vw,2.5rem)] italic leading-snug sm:leading-[1.15] text-bone"
             initial={{ opacity: 0, y: 24, filter: 'blur(8px)' }}
             whileInView={{ opacity: 1, y: 0, filter: 'blur(0px)' }}
             viewport={{ once: true }}
@@ -55,7 +55,7 @@ export default function About() {
           >
             “{profile.intro}”
           </motion.p>
-          <p className="mt-4 text-sm text-mist">— {profile.fullName}</p>
+          <p className="mt-3 sm:mt-4 text-xs sm:text-sm text-mist">— {profile.fullName}</p>
 
           <motion.dl
             className="mt-10 grid gap-px overflow-hidden rounded-xl bg-white/10 sm:grid-cols-2"

@@ -3,11 +3,13 @@ import type { Episode } from '../data/portfolio';
 import { EASE, Tilt } from './fx';
 import { PosterBackdrop } from './Poster';
 
-export default function EpisodeCard({ episode, index }: { episode: Episode; index: number }) {
+export default function EpisodeCard({ episode, index, isSingle = false }: { episode: Episode; index: number; isSingle?: boolean }) {
   const [season, ep] = episode.code.split(' ');
   return (
     <motion.article
-      className="w-[80vw] shrink-0 snap-start sm:w-[52vw] md:w-[38vw] lg:w-[30vw] xl:w-[26vw]"
+      className={`${
+        isSingle ? 'w-full max-w-xl' : 'w-[85vw] max-w-sm sm:w-[52vw] md:w-[38vw] lg:w-[30vw] xl:w-[26vw]'
+      } shrink-0 snap-start`}
       initial={{ opacity: 0, y: 30, rotateY: -8 }}
       animate={{ opacity: 1, y: 0, rotateY: 0 }}
       transition={{ duration: 0.7, delay: index * 0.1, ease: EASE }}

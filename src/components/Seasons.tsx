@@ -63,12 +63,17 @@ export default function Seasons() {
           <p className="gutter max-w-3xl text-[15px] leading-relaxed text-bone/75">{season.synopsis}</p>
 
           <div className="group/rail relative">
-            <div ref={rail} className="rail gutter flex snap-x snap-mandatory gap-4 overflow-x-auto py-8 [perspective:1200px]">
+            <div
+              ref={rail}
+              className={`rail gutter flex ${
+                season.episodes.length === 1 ? 'justify-start' : 'snap-x snap-mandatory overflow-x-auto'
+              } gap-4 py-8 [perspective:1200px]`}
+            >
               {season.episodes.map((e, i) => (
-                <EpisodeCard key={e.code} episode={e} index={i} />
+                <EpisodeCard key={e.code} episode={e} index={i} isSingle={season.episodes.length === 1} />
               ))}
             </div>
-            <RailButtons rail={rail} />
+            {season.episodes.length > 1 && <RailButtons rail={rail} />}
           </div>
         </motion.div>
       </AnimatePresence>
