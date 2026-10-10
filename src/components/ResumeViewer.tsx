@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion';
-import { certifications, education, profile, projects } from '../data/portfolio';
+import { certifications, profile, projects } from '../data/portfolio';
 import { EASE, Magnetic, SectionHeading } from './fx';
 
 /** THE FULL STORY — a designed resume hub with view and download actions. */
@@ -44,7 +44,7 @@ export default function ResumeSection({ onView }: { onView: () => void }) {
           </div>
           <dl className="mx-auto mt-10 grid max-w-md grid-cols-3 gap-px overflow-hidden rounded-xl bg-white/10 text-center">
             {[
-              { v: education[0].score.replace('CGPA ', ''), k: 'CGPA' },
+              { v: 'B.Tech', k: 'Degree' },
               { v: String(projects.length), k: 'Originals' },
               { v: String(certifications.length), k: 'Certs' },
             ].map((s) => (

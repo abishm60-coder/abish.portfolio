@@ -44,7 +44,7 @@ export default function Hero({ onPlay, onResume, profileId }: { onPlay: () => vo
   ];
 
   const floating = [
-    { text: education[0].score, sub: 'B.Tech IT', pos: 'left-[2%] top-[30%]', depth: 1 },
+    { text: 'B.Tech IT', sub: "St. Xavier's", pos: 'left-[2%] top-[30%]', depth: 1 },
     { text: 'AWS & Cloud Certified', sub: 'ICT Academy & AWS', pos: 'right-[0%] top-[18%]', depth: -1 },
     { text: 'JavaScript · React · Node.js', sub: 'Primary stack', pos: 'right-[4%] bottom-[24%]', depth: 0.6 },
   ];

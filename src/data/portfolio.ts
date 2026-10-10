@@ -12,11 +12,11 @@ export const profile = {
   firstName: 'ABISH',
   seriesTag: 'THE SERIES',
   /** Fictional studio card shown at the very start of the opening sequence. */
-  originalLabel: 'A DASARI ORIGINAL',
+  originalLabel: 'ABISH . M - PORTFOLIO',
   role: 'MERN Stack Developer',
   tagline: ['MERN Stack Developer', 'Full-Stack Web Development', 'JavaScript'],
   intro:
-    'B.Tech Information Technology graduate (CGPA 7.20) and MERN stack developer building responsive web applications with MongoDB, Express.js, React, and Node.js.',
+    'B.Tech Information Technology graduate and MERN stack developer building responsive web applications with MongoDB, Express.js, React, and Node.js.',
   location: 'Villukuri, Kanniyakumari, Tamilnadu, India',
   email: 'abishm60@gmail.com',
   links: {
@@ -38,7 +38,7 @@ export const education = [
     place: 'Kanniyakumari',
     degree: 'Bachelor of Technology — Information Technology',
     period: 'November 2022 – May 2026',
-    score: 'CGPA 7.20',
+    score: 'Nov 2022 – May 2026',
   },
   {
     school: 'Adline Matric Higher Secondary School',
@@ -330,8 +330,8 @@ export const seasons: Season[] = [
       {
         code: 'S02 E01',
         title: 'The Engineer',
-        description: 'Bachelor of Technology in Information Technology — CGPA 7.20.',
-        tags: ['B.Tech', 'IT', 'CGPA 7.20'],
+        description: 'Bachelor of Technology in Information Technology.',
+        tags: ['B.Tech', 'IT'],
         runtime: 'Oct 2022 – Present',
         palette: violet,
       },
@@ -405,7 +405,7 @@ export const introSlides: IntroSlide[] = [
     kicker: 'Education',
     title: 'B.Tech · IT',
     lines: ["St.Xavier's Catholic College Of Engineering", 'November 2022 – May 2026'],
-    chips: ['CGPA 7.20'],
+    chips: ['B.Tech IT'],
   },
   {
     kicker: 'Skills',
