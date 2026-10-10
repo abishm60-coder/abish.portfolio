@@ -52,7 +52,7 @@ function Outro() {
       target="_blank"
       rel="noreferrer"
       data-cursor="link"
-      className="group flex aspect-[3/4] min-h-[460px] w-[70vw] max-w-[300px] shrink-0 snap-start flex-col items-center justify-center gap-4 rounded-2xl border border-dashed border-white/15 text-center transition hover:border-crimson-2/60 sm:min-h-0 sm:aspect-[16/12] sm:w-[44vw] sm:max-w-none lg:w-[26vw]"
+      className="group flex aspect-[3/4] min-h-[460px] w-[82vw] max-w-[340px] shrink-0 snap-start flex-col items-center justify-center gap-4 rounded-2xl border border-dashed border-white/15 text-center transition hover:border-crimson-2/60 sm:min-h-[480px] sm:w-[48vw] sm:max-w-none sm:aspect-[4/5] md:w-[38vw] lg:min-h-[500px] lg:w-[28vw] xl:w-[24vw]"
     >
       <span className="flex h-14 w-14 items-center justify-center rounded-full border border-white/25 text-xl text-bone transition group-hover:scale-110 group-hover:border-crimson-2 group-hover:text-crimson-2 sm:h-16 sm:w-16 sm:text-2xl">↗</span>
       <span className="font-display text-2xl tracking-wide text-bone sm:text-3xl">More on GitHub</span>

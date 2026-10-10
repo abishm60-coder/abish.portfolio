@@ -6,13 +6,13 @@ import { ProjectArt } from './Poster';
 export default function ProjectCard({ project, index, onOpen }: { project: Project; index: number; onOpen: () => void }) {
   return (
     <motion.article
-      className="w-[82vw] max-w-[340px] shrink-0 snap-start sm:w-[62vw] sm:max-w-md lg:w-[46vw] xl:w-[42vw]"
+      className="w-[82vw] max-w-[340px] shrink-0 snap-start sm:w-[48vw] sm:max-w-none md:w-[38vw] lg:w-[28vw] xl:w-[24vw]"
       initial={{ opacity: 0, y: 40, filter: 'blur(10px)' }}
       whileInView={{ opacity: 1, y: 0, filter: 'blur(0px)' }}
       viewport={{ once: true, margin: '0px -10% 0px 0px' }}
       transition={{ duration: 0.9, delay: index * 0.08, ease: EASE }}
     >
-      <Tilt max={5} className="group rounded-2xl">
+      <Tilt max={5} className="group h-full rounded-2xl">
         <div
           role="button"
           tabIndex={0}
@@ -25,7 +25,7 @@ export default function ProjectCard({ project, index, onOpen }: { project: Proje
             }
           }}
           aria-label={`Open ${project.title}`}
-          className="focus-ring relative min-h-[460px] aspect-[3/4] overflow-hidden rounded-2xl ring-1 ring-white/10 transition duration-500 group-hover:shadow-[0_40px_80px_-20px_rgba(0,0,0,0.8)] group-hover:ring-white/25 sm:min-h-0 sm:aspect-[16/12] lg:aspect-auto lg:h-[66vh]"
+          className="focus-ring relative min-h-[460px] aspect-[3/4] overflow-hidden rounded-2xl ring-1 ring-white/10 transition duration-500 group-hover:shadow-[0_40px_80px_-20px_rgba(0,0,0,0.8)] group-hover:ring-white/25 sm:min-h-[480px] sm:aspect-[4/5] lg:min-h-[500px]"
         >
           <motion.div layoutId={`art-${project.id}`} className="absolute inset-0 overflow-hidden rounded-2xl">
             <div className="absolute inset-0 transition-transform duration-[1.4s] ease-[var(--ease-cine)] group-hover:scale-[1.07]">
